@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD1B0A71223837CC008B2A34 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0A70223837CC008B2A34 /* AddViewController.swift */; };
+		BD1B0A7622383F57008B2A34 /* SetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0A7522383F57008B2A34 /* SetListViewController.swift */; };
+		BD1B0A7822384C81008B2A34 /* SongWithBPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0A7722384C81008B2A34 /* SongWithBPM.swift */; };
+		BD1B0A792238D8E8008B2A34 /* SongWithBPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0A7722384C81008B2A34 /* SongWithBPM.swift */; };
+		BD1B0A7A2238D8E8008B2A34 /* SongWithBPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0A7722384C81008B2A34 /* SongWithBPM.swift */; };
+		BD1B0A7C2238DC80008B2A34 /* SongListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0A7B2238DC80008B2A34 /* SongListModel.swift */; };
+		BD1B0A7F2239CB89008B2A34 /* SongListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B0A7E2239CB89008B2A34 /* SongListTableViewCell.swift */; };
+		BDDC965D2233524000E44EB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC965C2233524000E44EB6 /* AppDelegate.swift */; };
+		BDDC96622233524000E44EB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96602233524000E44EB6 /* Main.storyboard */; };
+		BDDC96642233524100E44EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96632233524100E44EB6 /* Assets.xcassets */; };
+		BDDC96672233524100E44EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96652233524100E44EB6 /* LaunchScreen.storyboard */; };
+		BDDC96722233524100E44EB6 /* libPdMetronomeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC96712233524100E44EB6 /* libPdMetronomeSwiftTests.swift */; };
+		BDDC967D2233524100E44EB6 /* libPdMetronomeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC967C2233524100E44EB6 /* libPdMetronomeSwiftUITests.swift */; };
+		BDDC969C2233529E00E44EB6 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDC96922233527E00E44EB6 /* libpd-ios.a */; };
+		BDDC969F2233529E00E44EB6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDC969D2233529E00E44EB6 /* AVFoundation.framework */; };
+		BDDC96A02233529E00E44EB6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDC969E2233529E00E44EB6 /* AudioToolbox.framework */; };
+		BDDC96AA22372EB500E44EB6 /* click.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96A722372EB500E44EB6 /* click.pd */; };
+		BDDC96AB22372EB500E44EB6 /* click.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96A722372EB500E44EB6 /* click.pd */; };
+		BDDC96AC22372EB500E44EB6 /* click.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96A722372EB500E44EB6 /* click.pd */; };
+		BDDC96AD22372EB500E44EB6 /* metronome.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96A822372EB500E44EB6 /* metronome.pd */; };
+		BDDC96AE22372EB500E44EB6 /* metronome.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96A822372EB500E44EB6 /* metronome.pd */; };
+		BDDC96AF22372EB500E44EB6 /* metronome.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96A822372EB500E44EB6 /* metronome.pd */; };
+		BDDC96B022372EB500E44EB6 /* ratelogic.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96A922372EB500E44EB6 /* ratelogic.pd */; };
+		BDDC96B122372EB500E44EB6 /* ratelogic.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96A922372EB500E44EB6 /* ratelogic.pd */; };
+		BDDC96B222372EB500E44EB6 /* ratelogic.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96A922372EB500E44EB6 /* ratelogic.pd */; };
+		BDDC96B62237454F00E44EB6 /* main.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96B52237454F00E44EB6 /* main.pd */; };
+		BDDC96B72237454F00E44EB6 /* main.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96B52237454F00E44EB6 /* main.pd */; };
+		BDDC96B82237454F00E44EB6 /* main.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDDC96B52237454F00E44EB6 /* main.pd */; };
+		BDDC96C022374B9C00E44EB6 /* PDMetronome.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDC96BF22374B9C00E44EB6 /* PDMetronome.m */; };
+		BDDC96C122374B9C00E44EB6 /* PDMetronome.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDC96BF22374B9C00E44EB6 /* PDMetronome.m */; };
+		BDDC96C222374B9C00E44EB6 /* PDMetronome.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDC96BF22374B9C00E44EB6 /* PDMetronome.m */; };
+		BDDC96CB223773E600E44EB6 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC96CA223773E600E44EB6 /* MetronomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDDC966E2233524100E44EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDC96512233524000E44EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDDC96582233524000E44EB6;
+			remoteInfo = libPdMetronomeSwift;
+		};
+		BDDC96792233524100E44EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDC96512233524000E44EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDDC96582233524000E44EB6;
+			remoteInfo = libPdMetronomeSwift;
+		};
+		BDDC96912233527E00E44EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDC968A2233527E00E44EB6 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		BDDC96932233527E00E44EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDC968A2233527E00E44EB6 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		BDDC96952233527E00E44EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDC968A2233527E00E44EB6 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30C3D36D1FAA200100C67F08;
+			remoteInfo = "libpd-ios-multi";
+		};
+		BDDC96972233527E00E44EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDC968A2233527E00E44EB6 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30C3D2FA1FAA1FCC00C67F08;
+			remoteInfo = "libpd-osx-multi";
+		};
+		BDDC96992233528A00E44EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDDC968A2233527E00E44EB6 /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD1B0A70223837CC008B2A34 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		BD1B0A7522383F57008B2A34 /* SetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListViewController.swift; sourceTree = "<group>"; };
+		BD1B0A7722384C81008B2A34 /* SongWithBPM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongWithBPM.swift; sourceTree = "<group>"; };
+		BD1B0A7B2238DC80008B2A34 /* SongListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListModel.swift; sourceTree = "<group>"; };
+		BD1B0A7E2239CB89008B2A34 /* SongListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListTableViewCell.swift; sourceTree = "<group>"; };
+		BDDC96592233524000E44EB6 /* libPdMetronomeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libPdMetronomeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDC965C2233524000E44EB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDDC96612233524000E44EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDDC96632233524100E44EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDDC96662233524100E44EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDDC96682233524100E44EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDC966D2233524100E44EB6 /* libPdMetronomeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libPdMetronomeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDC96712233524100E44EB6 /* libPdMetronomeSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libPdMetronomeSwiftTests.swift; sourceTree = "<group>"; };
+		BDDC96732233524100E44EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDC96782233524100E44EB6 /* libPdMetronomeSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libPdMetronomeSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDC967C2233524100E44EB6 /* libPdMetronomeSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libPdMetronomeSwiftUITests.swift; sourceTree = "<group>"; };
+		BDDC967E2233524100E44EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDC968A2233527E00E44EB6 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "../pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		BDDC969D2233529E00E44EB6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BDDC969E2233529E00E44EB6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BDDC96A52233546300E44EB6 /* libPdSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libPdSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		BDDC96A722372EB500E44EB6 /* click.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = click.pd; sourceTree = "<group>"; };
+		BDDC96A822372EB500E44EB6 /* metronome.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = metronome.pd; sourceTree = "<group>"; };
+		BDDC96A922372EB500E44EB6 /* ratelogic.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ratelogic.pd; sourceTree = "<group>"; };
+		BDDC96B52237454F00E44EB6 /* main.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.pd; sourceTree = "<group>"; };
+		BDDC96BE22374B9C00E44EB6 /* PDMetronome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDMetronome.h; sourceTree = "<group>"; };
+		BDDC96BF22374B9C00E44EB6 /* PDMetronome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDMetronome.m; sourceTree = "<group>"; };
+		BDDC96CA223773E600E44EB6 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDDC96562233524000E44EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDC969F2233529E00E44EB6 /* AVFoundation.framework in Frameworks */,
+				BDDC96A02233529E00E44EB6 /* AudioToolbox.framework in Frameworks */,
+				BDDC969C2233529E00E44EB6 /* libpd-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDC966A2233524100E44EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDC96752233524100E44EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDDC96502233524000E44EB6 = {
+			isa = PBXGroup;
+			children = (
+				BDDC968A2233527E00E44EB6 /* libpd.xcodeproj */,
+				BDDC965B2233524000E44EB6 /* libPdMetronomeSwift */,
+				BDDC96702233524100E44EB6 /* libPdMetronomeSwiftTests */,
+				BDDC967B2233524100E44EB6 /* libPdMetronomeSwiftUITests */,
+				BDDC965A2233524000E44EB6 /* Products */,
+				BDDC969B2233529E00E44EB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDDC965A2233524000E44EB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC96592233524000E44EB6 /* libPdMetronomeSwift.app */,
+				BDDC966D2233524100E44EB6 /* libPdMetronomeSwiftTests.xctest */,
+				BDDC96782233524100E44EB6 /* libPdMetronomeSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDDC965B2233524000E44EB6 /* libPdMetronomeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC96C42237733700E44EB6 /* Model */,
+				BDDC96C82237733D00E44EB6 /* View */,
+				BDDC96C92237734100E44EB6 /* Controller */,
+				BDDC96A622372EA900E44EB6 /* Patches */,
+				BDDC96A52233546300E44EB6 /* libPdSwift-Bridging-Header.h */,
+				BDDC965C2233524000E44EB6 /* AppDelegate.swift */,
+				BDDC96632233524100E44EB6 /* Assets.xcassets */,
+				BDDC96682233524100E44EB6 /* Info.plist */,
+			);
+			path = libPdMetronomeSwift;
+			sourceTree = "<group>";
+		};
+		BDDC96702233524100E44EB6 /* libPdMetronomeSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC96712233524100E44EB6 /* libPdMetronomeSwiftTests.swift */,
+				BDDC96732233524100E44EB6 /* Info.plist */,
+			);
+			path = libPdMetronomeSwiftTests;
+			sourceTree = "<group>";
+		};
+		BDDC967B2233524100E44EB6 /* libPdMetronomeSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC967C2233524100E44EB6 /* libPdMetronomeSwiftUITests.swift */,
+				BDDC967E2233524100E44EB6 /* Info.plist */,
+			);
+			path = libPdMetronomeSwiftUITests;
+			sourceTree = "<group>";
+		};
+		BDDC968B2233527E00E44EB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC96922233527E00E44EB6 /* libpd-ios.a */,
+				BDDC96942233527E00E44EB6 /* libpd-osx.a */,
+				BDDC96962233527E00E44EB6 /* libpd-ios-multi.a */,
+				BDDC96982233527E00E44EB6 /* libpd-osx-multi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDDC969B2233529E00E44EB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC969E2233529E00E44EB6 /* AudioToolbox.framework */,
+				BDDC969D2233529E00E44EB6 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDDC96A622372EA900E44EB6 /* Patches */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC96B52237454F00E44EB6 /* main.pd */,
+				BDDC96A722372EB500E44EB6 /* click.pd */,
+				BDDC96A822372EB500E44EB6 /* metronome.pd */,
+				BDDC96A922372EB500E44EB6 /* ratelogic.pd */,
+			);
+			name = Patches;
+			sourceTree = "<group>";
+		};
+		BDDC96C42237733700E44EB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD1B0A7E2239CB89008B2A34 /* SongListTableViewCell.swift */,
+				BDDC96BE22374B9C00E44EB6 /* PDMetronome.h */,
+				BDDC96BF22374B9C00E44EB6 /* PDMetronome.m */,
+				BD1B0A7722384C81008B2A34 /* SongWithBPM.swift */,
+				BD1B0A7B2238DC80008B2A34 /* SongListModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BDDC96C82237733D00E44EB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC96602233524000E44EB6 /* Main.storyboard */,
+				BDDC96652233524100E44EB6 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BDDC96C92237734100E44EB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDDC96CA223773E600E44EB6 /* MetronomeViewController.swift */,
+				BD1B0A70223837CC008B2A34 /* AddViewController.swift */,
+				BD1B0A7522383F57008B2A34 /* SetListViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDDC96582233524000E44EB6 /* libPdMetronomeSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDDC96812233524100E44EB6 /* Build configuration list for PBXNativeTarget "libPdMetronomeSwift" */;
+			buildPhases = (
+				BDDC96552233524000E44EB6 /* Sources */,
+				BDDC96562233524000E44EB6 /* Frameworks */,
+				BDDC96572233524000E44EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDDC969A2233528A00E44EB6 /* PBXTargetDependency */,
+			);
+			name = libPdMetronomeSwift;
+			productName = libPdMetronomeSwift;
+			productReference = BDDC96592233524000E44EB6 /* libPdMetronomeSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDDC966C2233524100E44EB6 /* libPdMetronomeSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDDC96842233524100E44EB6 /* Build configuration list for PBXNativeTarget "libPdMetronomeSwiftTests" */;
+			buildPhases = (
+				BDDC96692233524100E44EB6 /* Sources */,
+				BDDC966A2233524100E44EB6 /* Frameworks */,
+				BDDC966B2233524100E44EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDDC966F2233524100E44EB6 /* PBXTargetDependency */,
+			);
+			name = libPdMetronomeSwiftTests;
+			productName = libPdMetronomeSwiftTests;
+			productReference = BDDC966D2233524100E44EB6 /* libPdMetronomeSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDDC96772233524100E44EB6 /* libPdMetronomeSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDDC96872233524100E44EB6 /* Build configuration list for PBXNativeTarget "libPdMetronomeSwiftUITests" */;
+			buildPhases = (
+				BDDC96742233524100E44EB6 /* Sources */,
+				BDDC96752233524100E44EB6 /* Frameworks */,
+				BDDC96762233524100E44EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDDC967A2233524100E44EB6 /* PBXTargetDependency */,
+			);
+			name = libPdMetronomeSwiftUITests;
+			productName = libPdMetronomeSwiftUITests;
+			productReference = BDDC96782233524100E44EB6 /* libPdMetronomeSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDDC96512233524000E44EB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Woong Hee Lee";
+				TargetAttributes = {
+					BDDC96582233524000E44EB6 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					BDDC966C2233524100E44EB6 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = BDDC96582233524000E44EB6;
+					};
+					BDDC96772233524100E44EB6 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = BDDC96582233524000E44EB6;
+					};
+				};
+			};
+			buildConfigurationList = BDDC96542233524000E44EB6 /* Build configuration list for PBXProject "libPdMetronomeSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDDC96502233524000E44EB6;
+			productRefGroup = BDDC965A2233524000E44EB6 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BDDC968B2233527E00E44EB6 /* Products */;
+					ProjectRef = BDDC968A2233527E00E44EB6 /* libpd.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BDDC96582233524000E44EB6 /* libPdMetronomeSwift */,
+				BDDC966C2233524100E44EB6 /* libPdMetronomeSwiftTests */,
+				BDDC96772233524100E44EB6 /* libPdMetronomeSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BDDC96922233527E00E44EB6 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = BDDC96912233527E00E44EB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDDC96942233527E00E44EB6 /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = BDDC96932233527E00E44EB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDDC96962233527E00E44EB6 /* libpd-ios-multi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios-multi.a";
+			remoteRef = BDDC96952233527E00E44EB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDDC96982233527E00E44EB6 /* libpd-osx-multi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx-multi.a";
+			remoteRef = BDDC96972233527E00E44EB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDDC96572233524000E44EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDC96B62237454F00E44EB6 /* main.pd in Resources */,
+				BDDC96AA22372EB500E44EB6 /* click.pd in Resources */,
+				BDDC96672233524100E44EB6 /* LaunchScreen.storyboard in Resources */,
+				BDDC96642233524100E44EB6 /* Assets.xcassets in Resources */,
+				BDDC96622233524000E44EB6 /* Main.storyboard in Resources */,
+				BDDC96B022372EB500E44EB6 /* ratelogic.pd in Resources */,
+				BDDC96AD22372EB500E44EB6 /* metronome.pd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDC966B2233524100E44EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDC96AE22372EB500E44EB6 /* metronome.pd in Resources */,
+				BDDC96B122372EB500E44EB6 /* ratelogic.pd in Resources */,
+				BDDC96B72237454F00E44EB6 /* main.pd in Resources */,
+				BDDC96AB22372EB500E44EB6 /* click.pd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDC96762233524100E44EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDC96AF22372EB500E44EB6 /* metronome.pd in Resources */,
+				BDDC96B222372EB500E44EB6 /* ratelogic.pd in Resources */,
+				BDDC96B82237454F00E44EB6 /* main.pd in Resources */,
+				BDDC96AC22372EB500E44EB6 /* click.pd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDDC96552233524000E44EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1B0A7C2238DC80008B2A34 /* SongListModel.swift in Sources */,
+				BD1B0A7822384C81008B2A34 /* SongWithBPM.swift in Sources */,
+				BDDC96CB223773E600E44EB6 /* MetronomeViewController.swift in Sources */,
+				BDDC96C022374B9C00E44EB6 /* PDMetronome.m in Sources */,
+				BD1B0A7F2239CB89008B2A34 /* SongListTableViewCell.swift in Sources */,
+				BD1B0A71223837CC008B2A34 /* AddViewController.swift in Sources */,
+				BDDC965D2233524000E44EB6 /* AppDelegate.swift in Sources */,
+				BD1B0A7622383F57008B2A34 /* SetListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDC96692233524100E44EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1B0A792238D8E8008B2A34 /* SongWithBPM.swift in Sources */,
+				BDDC96722233524100E44EB6 /* libPdMetronomeSwiftTests.swift in Sources */,
+				BDDC96C122374B9C00E44EB6 /* PDMetronome.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDDC96742233524100E44EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1B0A7A2238D8E8008B2A34 /* SongWithBPM.swift in Sources */,
+				BDDC967D2233524100E44EB6 /* libPdMetronomeSwiftUITests.swift in Sources */,
+				BDDC96C222374B9C00E44EB6 /* PDMetronome.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDDC966F2233524100E44EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDDC96582233524000E44EB6 /* libPdMetronomeSwift */;
+			targetProxy = BDDC966E2233524100E44EB6 /* PBXContainerItemProxy */;
+		};
+		BDDC967A2233524100E44EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDDC96582233524000E44EB6 /* libPdMetronomeSwift */;
+			targetProxy = BDDC96792233524100E44EB6 /* PBXContainerItemProxy */;
+		};
+		BDDC969A2233528A00E44EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = BDDC96992233528A00E44EB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDDC96602233524000E44EB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDDC96612233524000E44EB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDDC96652233524100E44EB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDDC96662233524100E44EB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDDC967F2233524100E44EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "libPdMetronomeSwift/libPdSwfit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDDC96802233524100E44EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "libPdMetronomeSwift/libPdSwfit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDDC96822233524100E44EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPdMetronomeSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPdMetronomeSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "libPdMetronomeSwift/libPdSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/**";
+			};
+			name = Debug;
+		};
+		BDDC96832233524100E44EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPdMetronomeSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPdMetronomeSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "libPdMetronomeSwift/libPdSwift-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/**";
+			};
+			name = Release;
+		};
+		BDDC96852233524100E44EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPdMetronomeSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPdMetronomeSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libPdMetronomeSwift.app/libPdMetronomeSwift";
+			};
+			name = Debug;
+		};
+		BDDC96862233524100E44EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPdMetronomeSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPdMetronomeSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libPdMetronomeSwift.app/libPdMetronomeSwift";
+			};
+			name = Release;
+		};
+		BDDC96882233524100E44EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPdMetronomeSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPdMetronomeSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = libPdMetronomeSwift;
+			};
+			name = Debug;
+		};
+		BDDC96892233524100E44EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPdMetronomeSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPdMetronomeSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = libPdMetronomeSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDDC96542233524000E44EB6 /* Build configuration list for PBXProject "libPdMetronomeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDC967F2233524100E44EB6 /* Debug */,
+				BDDC96802233524100E44EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDDC96812233524100E44EB6 /* Build configuration list for PBXNativeTarget "libPdMetronomeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDC96822233524100E44EB6 /* Debug */,
+				BDDC96832233524100E44EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDDC96842233524100E44EB6 /* Build configuration list for PBXNativeTarget "libPdMetronomeSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDC96852233524100E44EB6 /* Debug */,
+				BDDC96862233524100E44EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDDC96872233524100E44EB6 /* Build configuration list for PBXNativeTarget "libPdMetronomeSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDC96882233524100E44EB6 /* Debug */,
+				BDDC96892233524100E44EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDDC96512233524000E44EB6 /* Project object */;
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RTr-9z-7xf">
+                                <rect key="frame" x="163" y="616" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitchChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="MfH-KK-PKl"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="220" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdh-hw-GaZ">
+                                <rect key="frame" x="93.5" y="20" width="188" height="144"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="30" maxValue="220" translatesAutoresizingMaskIntoConstraints="NO" id="9pC-Aw-UXh">
+                                <rect key="frame" x="14" y="210" width="347" height="31"/>
+                                <connections>
+                                    <action selector="onBPMSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="nrZ-4z-WZH"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dq-Mp-6bk">
+                                <rect key="frame" x="172.5" y="248" width="30" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="REN-F3-aEB">
+                                <rect key="frame" x="16" y="299" width="343" height="29"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onSubdivisionChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="g5O-cA-zFQ"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subdivisions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDV-pB-2bu">
+                                <rect key="frame" x="139" y="335" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kLJ-g9-sHP">
+                                <rect key="frame" x="76" y="430" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RTr-9z-7xf" secondAttribute="bottom" constant="20" symbolic="YES" id="1EA-IP-Mri"/>
+                            <constraint firstItem="RTr-9z-7xf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ij-ne-7yn"/>
+                            <constraint firstItem="REN-F3-aEB" firstAttribute="top" secondItem="8dq-Mp-6bk" secondAttribute="bottom" constant="34" id="2EX-Xz-GVk"/>
+                            <constraint firstItem="Fdh-hw-GaZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cj2-Od-Byn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9pC-Aw-UXh" secondAttribute="trailing" constant="16" id="MQI-LU-jE7"/>
+                            <constraint firstItem="9pC-Aw-UXh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ORm-WU-iKj"/>
+                            <constraint firstItem="WDV-pB-2bu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P1L-Fh-nbS"/>
+                            <constraint firstItem="8dq-Mp-6bk" firstAttribute="top" secondItem="9pC-Aw-UXh" secondAttribute="bottom" constant="8" id="aIV-jZ-Qjp"/>
+                            <constraint firstItem="9pC-Aw-UXh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ax0-5T-KuY"/>
+                            <constraint firstItem="WDV-pB-2bu" firstAttribute="top" secondItem="REN-F3-aEB" secondAttribute="bottom" constant="8" symbolic="YES" id="dZA-bk-RNj"/>
+                            <constraint firstItem="Fdh-hw-GaZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hlH-fq-XdK"/>
+                            <constraint firstItem="8dq-Mp-6bk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xGK-va-oXs"/>
+                            <constraint firstItem="REN-F3-aEB" firstAttribute="trailing" secondItem="9pC-Aw-UXh" secondAttribute="trailing" id="yfx-nN-Wqa"/>
+                            <constraint firstItem="REN-F3-aEB" firstAttribute="leading" secondItem="9pC-Aw-UXh" secondAttribute="leading" id="yxk-yj-IvV"/>
+                            <constraint firstItem="9pC-Aw-UXh" firstAttribute="firstBaseline" secondItem="Fdh-hw-GaZ" secondAttribute="baseline" constant="73.5" symbolType="layoutAnchor" id="zje-IV-O7d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="4pw-dO-0JQ"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bpmLabel" destination="Fdh-hw-GaZ" id="rSy-b7-fYw"/>
+                        <outlet property="bpmSlider" destination="9pC-Aw-UXh" id="R12-Yg-ynY"/>
+                        <outlet property="onOffSwitch" destination="RTr-9z-7xf" id="lse-6r-DZz"/>
+                        <outlet property="subdivisionControl" destination="REN-F3-aEB" id="lTb-LZ-Osc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

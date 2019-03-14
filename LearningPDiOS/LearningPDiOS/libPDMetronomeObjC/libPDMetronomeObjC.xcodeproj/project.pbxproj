@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD93CCEC22308E2900F29A96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD93CCEB22308E2900F29A96 /* AppDelegate.m */; };
+		BD93CCEF22308E2900F29A96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD93CCEE22308E2900F29A96 /* ViewController.m */; };
+		BD93CCF222308E2900F29A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD93CCF022308E2900F29A96 /* Main.storyboard */; };
+		BD93CCF422308E2B00F29A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD93CCF322308E2B00F29A96 /* Assets.xcassets */; };
+		BD93CCF722308E2B00F29A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD93CCF522308E2B00F29A96 /* LaunchScreen.storyboard */; };
+		BD93CCFA22308E2B00F29A96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD93CCF922308E2B00F29A96 /* main.m */; };
+		BD93CD0422308E2B00F29A96 /* libPDMetronomeObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD93CD0322308E2B00F29A96 /* libPDMetronomeObjCTests.m */; };
+		BD93CD0F22308E2B00F29A96 /* libPDMetronomeObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD93CD0E22308E2B00F29A96 /* libPDMetronomeObjCUITests.m */; };
+		BDA7AF942231A48100B56911 /* PDMetronome.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA7AF932231A48100B56911 /* PDMetronome.m */; };
+		BDA7AFAE2231A54D00B56911 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA7AFA42231A50900B56911 /* libpd-ios.a */; };
+		BDA7AFB12231A54D00B56911 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA7AFAF2231A54D00B56911 /* AudioToolbox.framework */; };
+		BDA7AFB22231A54D00B56911 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA7AFB02231A54D00B56911 /* AVFoundation.framework */; };
+		BDA7AFC6223311FA00B56911 /* ratelogic.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDA7AFC3223311FA00B56911 /* ratelogic.pd */; };
+		BDA7AFC7223311FA00B56911 /* click.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDA7AFC4223311FA00B56911 /* click.pd */; };
+		BDA7AFCC2233134C00B56911 /* metronome.pd in Resources */ = {isa = PBXBuildFile; fileRef = BDA7AFCB2233134C00B56911 /* metronome.pd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD93CD0022308E2B00F29A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD93CCDF22308E2900F29A96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD93CCE622308E2900F29A96;
+			remoteInfo = libPDMetronomeObjC;
+		};
+		BD93CD0B22308E2B00F29A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD93CCDF22308E2900F29A96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD93CCE622308E2900F29A96;
+			remoteInfo = libPDMetronomeObjC;
+		};
+		BDA7AFA32231A50900B56911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA7AF9C2231A50900B56911 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		BDA7AFA52231A50900B56911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA7AF9C2231A50900B56911 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		BDA7AFA72231A50900B56911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA7AF9C2231A50900B56911 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30C3D36D1FAA200100C67F08;
+			remoteInfo = "libpd-ios-multi";
+		};
+		BDA7AFA92231A50900B56911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA7AF9C2231A50900B56911 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30C3D2FA1FAA1FCC00C67F08;
+			remoteInfo = "libpd-osx-multi";
+		};
+		BDA7AFAB2231A52C00B56911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA7AF9C2231A50900B56911 /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD93CCE722308E2900F29A96 /* libPDMetronomeObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libPDMetronomeObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD93CCEA22308E2900F29A96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD93CCEB22308E2900F29A96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD93CCED22308E2900F29A96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BD93CCEE22308E2900F29A96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BD93CCF122308E2900F29A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD93CCF322308E2B00F29A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD93CCF622308E2B00F29A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD93CCF822308E2B00F29A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD93CCF922308E2B00F29A96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD93CCFF22308E2B00F29A96 /* libPDMetronomeObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libPDMetronomeObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD93CD0322308E2B00F29A96 /* libPDMetronomeObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libPDMetronomeObjCTests.m; sourceTree = "<group>"; };
+		BD93CD0522308E2B00F29A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD93CD0A22308E2B00F29A96 /* libPDMetronomeObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libPDMetronomeObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD93CD0E22308E2B00F29A96 /* libPDMetronomeObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libPDMetronomeObjCUITests.m; sourceTree = "<group>"; };
+		BD93CD1022308E2B00F29A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA7AF922231A48100B56911 /* PDMetronome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDMetronome.h; sourceTree = "<group>"; };
+		BDA7AF932231A48100B56911 /* PDMetronome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDMetronome.m; sourceTree = "<group>"; };
+		BDA7AF9C2231A50900B56911 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "../pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		BDA7AFAF2231A54D00B56911 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BDA7AFB02231A54D00B56911 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BDA7AFC3223311FA00B56911 /* ratelogic.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ratelogic.pd; sourceTree = "<group>"; };
+		BDA7AFC4223311FA00B56911 /* click.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = click.pd; sourceTree = "<group>"; };
+		BDA7AFCB2233134C00B56911 /* metronome.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = metronome.pd; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD93CCE422308E2900F29A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA7AFB12231A54D00B56911 /* AudioToolbox.framework in Frameworks */,
+				BDA7AFB22231A54D00B56911 /* AVFoundation.framework in Frameworks */,
+				BDA7AFAE2231A54D00B56911 /* libpd-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD93CCFC22308E2B00F29A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD93CD0722308E2B00F29A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD93CCDE22308E2900F29A96 = {
+			isa = PBXGroup;
+			children = (
+				BDA7AF9C2231A50900B56911 /* libpd.xcodeproj */,
+				BD93CCE922308E2900F29A96 /* libPDMetronomeObjC */,
+				BD93CD0222308E2B00F29A96 /* libPDMetronomeObjCTests */,
+				BD93CD0D22308E2B00F29A96 /* libPDMetronomeObjCUITests */,
+				BD93CCE822308E2900F29A96 /* Products */,
+				BDA7AFAD2231A54D00B56911 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD93CCE822308E2900F29A96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD93CCE722308E2900F29A96 /* libPDMetronomeObjC.app */,
+				BD93CCFF22308E2B00F29A96 /* libPDMetronomeObjCTests.xctest */,
+				BD93CD0A22308E2B00F29A96 /* libPDMetronomeObjCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD93CCE922308E2900F29A96 /* libPDMetronomeObjC */ = {
+			isa = PBXGroup;
+			children = (
+				BDA7AFC82233124B00B56911 /* Patches */,
+				BD93CCEA22308E2900F29A96 /* AppDelegate.h */,
+				BD93CCEB22308E2900F29A96 /* AppDelegate.m */,
+				BD93CCED22308E2900F29A96 /* ViewController.h */,
+				BD93CCEE22308E2900F29A96 /* ViewController.m */,
+				BDA7AF922231A48100B56911 /* PDMetronome.h */,
+				BDA7AF932231A48100B56911 /* PDMetronome.m */,
+				BD93CCF022308E2900F29A96 /* Main.storyboard */,
+				BD93CCF322308E2B00F29A96 /* Assets.xcassets */,
+				BD93CCF522308E2B00F29A96 /* LaunchScreen.storyboard */,
+				BD93CCF822308E2B00F29A96 /* Info.plist */,
+				BD93CCF922308E2B00F29A96 /* main.m */,
+			);
+			path = libPDMetronomeObjC;
+			sourceTree = "<group>";
+		};
+		BD93CD0222308E2B00F29A96 /* libPDMetronomeObjCTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD93CD0322308E2B00F29A96 /* libPDMetronomeObjCTests.m */,
+				BD93CD0522308E2B00F29A96 /* Info.plist */,
+			);
+			path = libPDMetronomeObjCTests;
+			sourceTree = "<group>";
+		};
+		BD93CD0D22308E2B00F29A96 /* libPDMetronomeObjCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD93CD0E22308E2B00F29A96 /* libPDMetronomeObjCUITests.m */,
+				BD93CD1022308E2B00F29A96 /* Info.plist */,
+			);
+			path = libPDMetronomeObjCUITests;
+			sourceTree = "<group>";
+		};
+		BDA7AF9D2231A50900B56911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDA7AFA42231A50900B56911 /* libpd-ios.a */,
+				BDA7AFA62231A50900B56911 /* libpd-osx.a */,
+				BDA7AFA82231A50900B56911 /* libpd-ios-multi.a */,
+				BDA7AFAA2231A50900B56911 /* libpd-osx-multi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDA7AFAD2231A54D00B56911 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDA7AFAF2231A54D00B56911 /* AudioToolbox.framework */,
+				BDA7AFB02231A54D00B56911 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDA7AFC82233124B00B56911 /* Patches */ = {
+			isa = PBXGroup;
+			children = (
+				BDA7AFC4223311FA00B56911 /* click.pd */,
+				BDA7AFCB2233134C00B56911 /* metronome.pd */,
+				BDA7AFC3223311FA00B56911 /* ratelogic.pd */,
+			);
+			name = Patches;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD93CCE622308E2900F29A96 /* libPDMetronomeObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD93CD1322308E2B00F29A96 /* Build configuration list for PBXNativeTarget "libPDMetronomeObjC" */;
+			buildPhases = (
+				BD93CCE322308E2900F29A96 /* Sources */,
+				BD93CCE422308E2900F29A96 /* Frameworks */,
+				BD93CCE522308E2900F29A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDA7AFAC2231A52C00B56911 /* PBXTargetDependency */,
+			);
+			name = libPDMetronomeObjC;
+			productName = libPDMetronomeObjC;
+			productReference = BD93CCE722308E2900F29A96 /* libPDMetronomeObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD93CCFE22308E2B00F29A96 /* libPDMetronomeObjCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD93CD1622308E2B00F29A96 /* Build configuration list for PBXNativeTarget "libPDMetronomeObjCTests" */;
+			buildPhases = (
+				BD93CCFB22308E2B00F29A96 /* Sources */,
+				BD93CCFC22308E2B00F29A96 /* Frameworks */,
+				BD93CCFD22308E2B00F29A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD93CD0122308E2B00F29A96 /* PBXTargetDependency */,
+			);
+			name = libPDMetronomeObjCTests;
+			productName = libPDMetronomeObjCTests;
+			productReference = BD93CCFF22308E2B00F29A96 /* libPDMetronomeObjCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD93CD0922308E2B00F29A96 /* libPDMetronomeObjCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD93CD1922308E2B00F29A96 /* Build configuration list for PBXNativeTarget "libPDMetronomeObjCUITests" */;
+			buildPhases = (
+				BD93CD0622308E2B00F29A96 /* Sources */,
+				BD93CD0722308E2B00F29A96 /* Frameworks */,
+				BD93CD0822308E2B00F29A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD93CD0C22308E2B00F29A96 /* PBXTargetDependency */,
+			);
+			name = libPDMetronomeObjCUITests;
+			productName = libPDMetronomeObjCUITests;
+			productReference = BD93CD0A22308E2B00F29A96 /* libPDMetronomeObjCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD93CCDF22308E2900F29A96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Woong Hee Lee";
+				TargetAttributes = {
+					BD93CCE622308E2900F29A96 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BD93CCFE22308E2B00F29A96 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BD93CCE622308E2900F29A96;
+					};
+					BD93CD0922308E2B00F29A96 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BD93CCE622308E2900F29A96;
+					};
+				};
+			};
+			buildConfigurationList = BD93CCE222308E2900F29A96 /* Build configuration list for PBXProject "libPDMetronomeObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD93CCDE22308E2900F29A96;
+			productRefGroup = BD93CCE822308E2900F29A96 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BDA7AF9D2231A50900B56911 /* Products */;
+					ProjectRef = BDA7AF9C2231A50900B56911 /* libpd.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BD93CCE622308E2900F29A96 /* libPDMetronomeObjC */,
+				BD93CCFE22308E2B00F29A96 /* libPDMetronomeObjCTests */,
+				BD93CD0922308E2B00F29A96 /* libPDMetronomeObjCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BDA7AFA42231A50900B56911 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = BDA7AFA32231A50900B56911 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA7AFA62231A50900B56911 /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = BDA7AFA52231A50900B56911 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA7AFA82231A50900B56911 /* libpd-ios-multi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios-multi.a";
+			remoteRef = BDA7AFA72231A50900B56911 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA7AFAA2231A50900B56911 /* libpd-osx-multi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx-multi.a";
+			remoteRef = BDA7AFA92231A50900B56911 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD93CCE522308E2900F29A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA7AFCC2233134C00B56911 /* metronome.pd in Resources */,
+				BDA7AFC7223311FA00B56911 /* click.pd in Resources */,
+				BDA7AFC6223311FA00B56911 /* ratelogic.pd in Resources */,
+				BD93CCF722308E2B00F29A96 /* LaunchScreen.storyboard in Resources */,
+				BD93CCF422308E2B00F29A96 /* Assets.xcassets in Resources */,
+				BD93CCF222308E2900F29A96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD93CCFD22308E2B00F29A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD93CD0822308E2B00F29A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD93CCE322308E2900F29A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD93CCEF22308E2900F29A96 /* ViewController.m in Sources */,
+				BD93CCFA22308E2B00F29A96 /* main.m in Sources */,
+				BDA7AF942231A48100B56911 /* PDMetronome.m in Sources */,
+				BD93CCEC22308E2900F29A96 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD93CCFB22308E2B00F29A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD93CD0422308E2B00F29A96 /* libPDMetronomeObjCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD93CD0622308E2B00F29A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD93CD0F22308E2B00F29A96 /* libPDMetronomeObjCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD93CD0122308E2B00F29A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD93CCE622308E2900F29A96 /* libPDMetronomeObjC */;
+			targetProxy = BD93CD0022308E2B00F29A96 /* PBXContainerItemProxy */;
+		};
+		BD93CD0C22308E2B00F29A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD93CCE622308E2900F29A96 /* libPDMetronomeObjC */;
+			targetProxy = BD93CD0B22308E2B00F29A96 /* PBXContainerItemProxy */;
+		};
+		BDA7AFAC2231A52C00B56911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = BDA7AFAB2231A52C00B56911 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD93CCF022308E2900F29A96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD93CCF122308E2900F29A96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD93CCF522308E2B00F29A96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD93CCF622308E2B00F29A96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD93CD1122308E2B00F29A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BD93CD1222308E2B00F29A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD93CD1422308E2B00F29A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPDMetronomeObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPDMetronomeObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/**";
+			};
+			name = Debug;
+		};
+		BD93CD1522308E2B00F29A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPDMetronomeObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPDMetronomeObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/**";
+			};
+			name = Release;
+		};
+		BD93CD1722308E2B00F29A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPDMetronomeObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPDMetronomeObjCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libPDMetronomeObjC.app/libPDMetronomeObjC";
+			};
+			name = Debug;
+		};
+		BD93CD1822308E2B00F29A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPDMetronomeObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPDMetronomeObjCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libPDMetronomeObjC.app/libPDMetronomeObjC";
+			};
+			name = Release;
+		};
+		BD93CD1A22308E2B00F29A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPDMetronomeObjCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPDMetronomeObjCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = libPDMetronomeObjC;
+			};
+			name = Debug;
+		};
+		BD93CD1B22308E2B00F29A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUA32U4432;
+				INFOPLIST_FILE = libPDMetronomeObjCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WoongHeeLee.libPDMetronomeObjCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = libPDMetronomeObjC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD93CCE222308E2900F29A96 /* Build configuration list for PBXProject "libPDMetronomeObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD93CD1122308E2B00F29A96 /* Debug */,
+				BD93CD1222308E2B00F29A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD93CD1322308E2B00F29A96 /* Build configuration list for PBXNativeTarget "libPDMetronomeObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD93CD1422308E2B00F29A96 /* Debug */,
+				BD93CD1522308E2B00F29A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD93CD1622308E2B00F29A96 /* Build configuration list for PBXNativeTarget "libPDMetronomeObjCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD93CD1722308E2B00F29A96 /* Debug */,
+				BD93CD1822308E2B00F29A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD93CD1922308E2B00F29A96 /* Build configuration list for PBXNativeTarget "libPDMetronomeObjCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD93CD1A22308E2B00F29A96 /* Debug */,
+				BD93CD1B22308E2B00F29A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD93CCDF22308E2900F29A96 /* Project object */;
+}
