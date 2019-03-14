@@ -1,13 +1,9 @@
 # Inspiration
 
 I was using a simple Google online metrome while doing guitar warm up exercises.
-
 I was manually changing bpm for different exercises and sometimes I forget what tempo I need to play with.
-
 I thought it would be very beneficial to have a metronome app that allows users to save presets for each exercise.
-
 Personally, this could also be useful during the practice time with my band where I need to set my delay tempo for different songs
-
 This app allows you to quickly access various tempo.
 
 # Current Features
