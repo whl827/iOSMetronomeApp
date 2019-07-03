@@ -3,7 +3,7 @@
 //  PracticeLibPD
 //
 //  Created by Woong Hee Lee on 3/6/19.
-//  Copyright © 2019 Woong Hee Lee. All rights reserved by other developer
+//  Copyright © 2019 Woong Hee Lee. All rights reserved.
 //
 
 #import "ViewController.h"
